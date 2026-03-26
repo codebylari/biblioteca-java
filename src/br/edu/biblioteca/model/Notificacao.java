@@ -1,0 +1,42 @@
+package br.edu.biblioteca.model;
+
+import java.time.LocalDate;
+
+public class Notificacao {
+
+    private int id;
+    private int usuarioId;
+    private String mensagem;
+    private LocalDate data;
+    private boolean lida;
+
+    public Notificacao(int id, int usuarioId, String mensagem,
+                       LocalDate data, boolean lida) {
+
+        this.id = id;
+        this.usuarioId = usuarioId;
+        this.mensagem = mensagem;
+        this.data = data;
+        this.lida = lida;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getUsuarioId() {
+        return usuarioId;
+    }
+
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public boolean isLida() {
+        return lida;
+    }
+}
